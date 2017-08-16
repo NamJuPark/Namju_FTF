@@ -38,13 +38,10 @@ public class Adapter_Show_Exercise_Category extends BaseAdapter{
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         if(view == null) view = LayoutInflater.from(context).inflate(R.layout.item_show_exercise_category,null);
-        item_Exercise_Category one = data.get(i);
 
         ImageView imege = (ImageView)view.findViewById(R.id.imageView);
-        ImageView name = (ImageView)view.findViewById(R.id.nameView);
 
-        imege.setImageResource(one.imgno);
-        name.setImageResource(one.nameno);
+        imege.setImageResource(data.get(i).imgno);
 
         return view;
     }

@@ -6,10 +6,8 @@ package com.example.namju_flytofit;
 
 public class item_Exercise_Category {
     int imgno;
-    int nameno;
 
-    public item_Exercise_Category(int imgno, int nameno){
+    public item_Exercise_Category(int imgno){
         this.imgno = imgno;
-        this.nameno = nameno;
     }
 }

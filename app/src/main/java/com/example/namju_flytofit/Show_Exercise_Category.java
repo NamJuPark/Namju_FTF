@@ -53,11 +53,10 @@ public class Show_Exercise_Category extends AppCompatActivity {
         adapter = new Adapter_Show_Exercise_Category(data,this);
         //어댑터와 그리드 뷰 연결
         gridView.setAdapter(adapter);
-        data.add(new item_Exercise_Category(R.drawable.back,R.drawable.back));
-        data.add(new item_Exercise_Category(R.drawable.back,R.drawable.back));
-        data.add(new item_Exercise_Category(R.drawable.leg,R.drawable.leg));
-        data.add(new item_Exercise_Category(R.drawable.leg,R.drawable.leg));
-        data.add(new item_Exercise_Category(R.drawable.back,R.drawable.back));
+        data.add(new item_Exercise_Category(R.drawable.arm));
+        data.add(new item_Exercise_Category(R.drawable.leg));
+        data.add(new item_Exercise_Category(R.drawable.shoulder));
+        data.add(new item_Exercise_Category(R.drawable.valley));
         adapter.notifyDataSetChanged();
 
     }
